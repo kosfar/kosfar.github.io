@@ -24,13 +24,14 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-    <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">
+    <p class="social-icons">
+       <a target="_blank" href="https://github.com/kosfar"><i class="fa fa-github fa-2x"></i></a>
+       <a target="_blank" href="https://twitter.com/kosfar"><i class="fa fa-twitter fa-2x"></i></a>
+       <a target="_blank" href="https://www.linkedin.com/in/kostisfardelas"><i class="fa fa-linkedin fa-2x"></i></a>
+    </p>
     <p>
       &copy; {{ site.time | date: '%Y' }}. All rights reserved.
     </p>
