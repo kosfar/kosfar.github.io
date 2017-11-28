@@ -4,7 +4,8 @@ tagline: A systems traveller logbook
 description: >-
   "A logbook originally referred to a book for recording readings from the chip log,
   used to determine the distance a ship traveled within a certain amount of time."
-  (Wikipedia)
+  
+  -- Wikipedia
 url: 'https://kosfar.github.io'
 baseurl: ''
 paginate: 5
