@@ -1,4 +1,4 @@
-permalink: pretty
+permalink: /:title/
 title: kosfar's Blog
 tagline: A systems traveller logbook
 description: >-
