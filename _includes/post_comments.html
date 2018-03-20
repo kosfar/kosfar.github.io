@@ -4,7 +4,7 @@
 <div class="related-heading bg-{{site.default_post_color}}">
   <h3>Comments</h3>
 <h5>
-<p>Want to leave a comment? Visit <a target="_blank" href="https://github.com/kosfar/kosfar.github.io/issues/{{page.commentIssueId}}"> this post's issue page on GitHub</a>.</p>
+<p>Want to leave a comment? Visit <a target="_blank" href="https://github.com/kosfar/kosfar.github.io/issues/{{page.commentIssueId}}"> the post's issue page on GitHub</a>.</p>
 </h5>
 </div>
 
@@ -15,25 +15,25 @@
       var cuserlink = data[i].user.html_url;
       var clink = data[i].html_url;
       var cbody = data[i].body_html;
-      var cavatarlink = data[i].user.avatar_url;      
+      var cavatarlink = data[i].user.avatar_url;
       var cdate = new Date(data[i].created_at);
       var dopts = { month: 'short', day: 'numeric', year: 'numeric' }
       $("#comments").append(
-         "<div class='comment'>" + 
-            "<div class='commentheader'>" + 
-              "<div class='commentgravatar'>" + 
-                '<img src="' + cavatarlink + '" alt="" width="30" height="30">' + 
-              "</div>" + 
-              "<a class='commentuser' href=\""+ cuserlink + "\">" + 
-                cuser + 
-              "</a>" + 
-              "<a class='commentdate' href=\"" + clink + "\">" + 
-                cdate.toLocaleDateString("en") +  
+         "<div class='comment'>" +
+            "<div class='commentheader'>" +
+              "<div class='commentgravatar'>" +
+                '<img src="' + cavatarlink + '" alt="" width="30" height="30">' +
+              "</div>" +
+              "<a class='commentuser' href=\""+ cuserlink + "\">" +
+                cuser +
               "</a>" +
-            "</div>" + 
-            "<div class='commentbody'>" + 
-              cbody + 
-            "</div>" + 
+              "<a class='commentdate' href=\"" + clink + "\">" +
+                cdate.toLocaleDateString("en") +
+              "</a>" +
+            "</div>" +
+            "<div class='commentbody'>" +
+              cbody +
+            "</div>" +
           "</div>"
       );
     }
